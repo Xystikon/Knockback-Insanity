@@ -26,3 +26,5 @@ scoreboard players set @a doubleJumpTime 0
 scoreboard objectives add livesLeft dummy "Lives Left"
 scoreboard players set @a livesLeft 0
 scoreboard objectives setdisplay sidebar livesLeft
+
+scoreboard objectives add timers dummy

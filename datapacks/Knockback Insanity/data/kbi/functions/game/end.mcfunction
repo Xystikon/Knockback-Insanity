@@ -1,10 +1,10 @@
-tag @s add winner
-
-title @a title [{"selector": "@a[tag=winner]"},{"text": " has won!"}]
-tag @s remove winner
-
-scoreboard players set gameState info 0
-
-execute as @a run function kbi:tag/in-lobby
+title @a title [{"selector": "@s"},{"text": " has won!"}]
 
 clear @a
+
+scoreboard players set @a livesLeft 0
+execute as @a run function kbi:tag/spectator
+
+gamemode spectator @a
+
+schedule function kbi:game/tp-to-lobby 5s

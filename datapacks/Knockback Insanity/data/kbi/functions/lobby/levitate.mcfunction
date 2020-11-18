@@ -1,1 +1,1 @@
-execute as @a at @s if entity @s[y=45,dy=-32] run effect give @s minecraft:levitation 1 15 true
+execute as @a at @s if entity @s[y=45,dy=-32] run effect give @s minecraft:levitation 2 15 true

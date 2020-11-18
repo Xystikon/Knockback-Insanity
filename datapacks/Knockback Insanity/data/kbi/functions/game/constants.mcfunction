@@ -22,3 +22,5 @@ weather clear
 #tag @a[tag=!player,tag=!spectator] add spectator
 
 execute as @a if data entity @s[tag=afterJump] {OnGround:1b} run tag @s remove afterJump
+
+execute as @a at @s if entity @s[y=-2,dy=-32] run kill @s

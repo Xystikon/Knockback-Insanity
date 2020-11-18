@@ -1,7 +1,13 @@
 ##### LOBBY #####
 
+# constants
+execute if score gameState info matches 0 run function kbi:lobby/constants
+
 # levitation
 execute if score gameState info matches 0 run function kbi:lobby/levitate
+
+# effects
+execute if score gameState info matches 0 run function kbi:lobby/effects
 
 ##### GAME #####
 
@@ -17,8 +23,8 @@ execute if score gameState info matches 2 as @a[tag=player] run function kbi:gam
 # effects
 execute if score gameState info matches 2 as @a[tag=player] run function kbi:game/effects
 
-# double jump - if sneaking
-execute if score gameState info matches 2 as @a[tag=player] run function kbi:game/double-jump
+# double jump
+execute as @a run function kbi:game/double-jump
 
 # constant commands
 execute if score gameState info matches 2 run function kbi:game/constants

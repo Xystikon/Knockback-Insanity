@@ -7,3 +7,5 @@ execute as @a if score @s deaths matches 1.. if score @s livesLeft matches 0 run
 execute if score playersAlive info matches 1 as @a if score @s livesLeft matches 1.. run function kbi:game/end
 
 execute as @a if score @s deaths matches 1.. if score map info matches 1 run scoreboard players set @s deaths 0
+
+execute as @a if score @s deaths matches 1.. if score @s livesLeft matches 1.. run effect give @s blindness 2 1 true
