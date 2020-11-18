@@ -1,0 +1,1 @@
+give @s armor_stand{display:{Name:'{"text":"Jump Pad Marker"}'},EntityTag:{Tags:["jump-pad-marker"]}}
